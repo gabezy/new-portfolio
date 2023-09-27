@@ -28,6 +28,12 @@
               Education
             </a>
           </li>
+          <li class="flex flex-col">
+            <a href="" target="_blank" class="p-4 uppercase after:content-[''] after:block after:w-0 after:h-1 
+                after:rounded-sm after:transition-all after:ease-in-out after:bg-purple-500 hover:after:w-1/2">
+              Curriculum
+            </a>
+          </li>
         </ul>
         <div class="flex items-center justify-center gap-8">
           <a href="https://www.linkedin.com/in/gabriel-moreira-dev1/" target="_blank" title="linkedin"
@@ -41,7 +47,7 @@
       </nav>
     </header>
 
-    <main class="max-w-md mx-auto mt-48" data-animate="scroll left">
+    <article class="max-w-md mx-auto mt-48" data-animate="scroll left">
       <div class="flex flex-col font-bold">
         <span class="text-xl text-gray-700">Hi there!</span>
         <span class="text-4xl"> My name is</span>
@@ -49,7 +55,7 @@
       </div>
       <div class="mt-4">
         <p class="text-xl">I'm a Full Stack developer and a Tech enthusiast</p>
-        <p class="text-xl">Here is some technolgies that i work with and know</p>
+        <p class="text-xl">Here is some technologies that i work and play with </p>
         <ul class="mt-4 flex flex-wrap items-center justify-center gap-4">
           <li title="Java"><img src="java.svg" alt=""></li>
           <li title="Node.js"><img src="nodejs.svg" alt=""></li>
@@ -58,56 +64,93 @@
           <li title="Reactjs"><img src="react.svg" alt=""></li>
           <li title="Angular"><img src="angular.svg" alt=""></li>
           <li title="PostgreSQL"><img src="postgresql.svg" alt=""></li>
-          <li title="Mongodb"><img src="mongodb.svg" alt=""></li>
+          <li title="Mongodb"><img src="mongodb.svg" alt="MongoDB Icon"></li>
+          <li title="Nestjs"><img src="nestjs.svg" alt="Nestjs Icon"></li>
         </ul>
         <p class="mt-4 text-base text-gray-600">*Located in brasília, Brazil</p>
       </div>
-    </main>
+    </article>
 
-
-    <article class="mt-56" id="projects" data-animate="scroll left">
-      <h2 class="my-5 text-4xl font-bold uppercase">Projects</h2>
-      <div class="flex flex-wrap items-start justify-between">
-        <div class="basis-column">
-          <h2 class="text-xl text-slate-900 font-bold">Dogs | Rede social para cachorros</h1>
-            <p class="mt-4 text-lg max-w-sm">
-              A social network for dogs, where you can post photos with a the dog's name, age and
-              weigth.
-              The application
-              allows you to create a new account, where validate if there is any account with the same data, such as
-              email
-              and username.
-            </p>
-            <ul class="mt-4 grid grid-cols-3 items-center justify-center gap-4 text-center text-sm uppercase font-bold">
-              <li class="bg-custom-purple-500 p-3 rounded-lg">JavaScript</li>
-              <li class="bg-custom-purple-500 p-3 rounded-lg">React</li>
-              <li class="bg-custom-purple-500 p-3 rounded-lg">React Hook form</li>
-              <li class="bg-custom-purple-500 p-3 rounded-lg">React Router</li>
-            </ul>
-        </div>
-        <div class="basis-column">
-          <h2 class="text-xl text-slate-900 font-bold">Dogs | Rede social para cachorros</h1>
-            <p class="mt-4 text-lg max-w-sm">
-              A social network for dogs, where you can post photos with a the dog's name, age and
-              weigth.
-              The application
-              allows you to create a new account, where validate if there is any account with the same data, such as
-              email
-              and username.
-            </p>
-            <ul class="mt-4 grid grid-cols-3 items-center justify-center gap-4 text-sm text-center uppercase font-bold">
-              <li class="bg-custom-purple-500 p-3 rounded-lg">Java</li>
-              <li class="bg-custom-purple-500 p-3 rounded-lg">Spring Boot</li>
-              <li class="bg-custom-purple-500 p-3 rounded-lg">Mysql</li>
-              <li class="bg-custom-purple-500 p-3 rounded-lg">Flyway</li>
-            </ul>
+    <main class="mt-56 max-w-5xl relative mx-auto" data-animate="scroll left">
+      <div class="fade max-h-[470px]" data-slide>
+        <img
+          src="https://camo.githubusercontent.com/bba90d77d5a4bf165f5d2343f95a2cd4beebe720b81949635d3f859ad1dc1a00/68747470733a2f2f692e696d6775722e636f6d2f435069677968642e706e67"
+          class="z-0 w-full h-[468px]" alt="">
+        <div class="flex flex-col items-center gap-6 absolute left-1/2 top-1/2 translate-y-[-20%] translate-x-[-50%]">
+          <p class="text-xl text-gray-300 font-bold">
+            Dogs | Rede social para cachorros
+          </p>
+          <a href="https://dogsr.gabrielmdev.com/" target="_blank"
+            class="bg-purple-700 py-3 px-5 rounded-md text-white uppercase hover:bg-purple-500 transition">See
+            Project
+          </a>
+          <span class="text-lg text-stone-950">Technologies used</span>
+          <ul class="flex items-center justify-center gap-3">
+            <li title="JavaScript" class="w-16"><img src="javascript.svg" alt=""></li>
+            <li title="Reactjs" class="bg-white rounded-full"><img src="react.svg" alt="Reactjs Icon"></li>
+          </ul>
         </div>
       </div>
-    </article>
+
+      <div class="fade max-h-[470px]" data-slide>
+        <img
+          src="https://images.unsplash.com/photo-1619410283995-43d9134e7656?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=30"
+          class="z-0 w-full h-[468px] object-cover" alt="">
+        <div class="flex flex-col items-center gap-6 absolute left-1/2 top-1/2 translate-y-[-20%] translate-x-[-50%]">
+          <p class="text-xl text-gray-300 font-bold">
+            Voll.med API Rest
+          </p>
+          <a href="https://github.com/gabezy/voll.med-api" target="_blank"
+            class="bg-purple-700 py-3 px-5 rounded-md text-white uppercase hover:bg-purple-500 transition">See
+            Project
+          </a>
+          <span class="text-lg text-white">Technologies used</span>
+          <ul class="flex items-center justify-center gap-3">
+            <li title="Java"><img src="java.svg" alt=""></li>
+            <li title="Spring Boot" class="bg-white rounded-full"><img src="spring.svg" alt=""></li>
+            <li title="MySQL" class="bg-white rounded-md"><img src="mysql.svg" alt=""></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="fade max-h-[470px]" data-slide>
+        <img
+          src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=40"
+          class="z-0 w-full h-[468px] object-cover" alt="">
+        <div class="flex flex-col items-center gap-6 absolute left-1/2 top-1/2 translate-y-[-20%] translate-x-[-50%]">
+          <p class="text-xl text-gray-300 font-bold">
+            FitHub API Rest
+          </p>
+          <a href="https://github.com/gabezy/FitHub-Back-End" target="_blank"
+            class="bg-purple-700 py-3 px-5 rounded-md text-white uppercase hover:bg-purple-500 transition">See
+            Project
+          </a>
+          <span class="text-lg text-white">Technologies used</span>
+          <ul class="flex items-center justify-center gap-3">
+            <li title="TypeScript" class="bg-white rounded-lg"><img src="typescript.svg" alt=""></li>
+            <li title="Nestjs"><img src="nestjs.svg" alt="Nestjs Icon"></li>
+            <li title="PostgreSQL"><img src="postgresql.svg" alt=""></li>
+          </ul>
+        </div>
+      </div>
+
+      <button class="prev text-purple-500" type="button" title="Previous">&#10094;</button>
+      <button class="next text-purple-500" type="button" title="Next">&#10095;</button>
+    </main>
+
+    <div class="mt-4 w-fit mx-auto flex gap-2" data-animate="scroll left">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
 
     <div class="mt-60 flex flex-wrap items-start justify-between" id="education" data-animate="scroll left">
       <article class="basis-column">
-        <h2 class="my-5 text-4xl font-bold uppercase">Education</h2>
+        <h2
+          class="flex gap-2 items-center my-5 text-4xl font-bold uppercase before:block before:w-3 before:h-9 before:bg-purple-700 before:rounded-lg ">
+          Education
+        </h2>
         <div class="flex flex-col gap-3">
           <div class="flex flex-col">
             <h3 class="text-xl font-bold text-gray-800">Associate Degree</h3>
@@ -125,7 +168,10 @@
       </article>
 
       <article class="basis-column">
-        <h2 class="my-5 text-4xl font-bold uppercase">Courses</h2>
+        <h2
+          class="flex gap-2 items-center my-5 text-4xl font-bold uppercase before:block before:w-3 before:h-9 before:bg-purple-700 before:rounded-lg ">
+          Courses
+        </h2>
         <div class="flex flex-col gap-3">
           <div class="flex flex-col items-start">
             <h3 class="text-xl font-bold text-gray-800">Programming Logic & Web programming</h3>
