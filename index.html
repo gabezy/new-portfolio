@@ -10,37 +10,47 @@
 
 <body>
   <div class="max-w-screen-2xl mx-auto">
-
-    <header class="mt-6">
+    <header class="mt-12">
       <nav class="flex items-center justify-between">
         <span>
           <img src="logo.svg" alt="">
         </span>
-        <ul class="flex items-center justify-center gap-8">
-          <li><a href="#" class="uppercase">Projects</a></li>
-          <li><a href="#" class="uppercase">Education</a></li>
-          <li><a href="#" class="uppercase">Contact</a></li>
+        <ul class="flex items-center justify-center gap-8 text-xl" id="menu">
+          <li class="flex flex-col">
+            <a href="#projects" class="p-4 uppercase after:content-[''] after:block after:w-0 after:h-1 
+                after:rounded-sm after:transition-all after:ease-in-out after:bg-purple-500 hover:after:w-1/2">
+              Projects
+            </a>
+          </li>
+          <li class="flex flex-col">
+            <a href="#education" class="p-4 uppercase after:content-[''] after:block after:w-0 after:h-1 
+                after:rounded-sm after:transition-all after:ease-in-out after:bg-purple-500 hover:after:w-1/2">
+              Education
+            </a>
+          </li>
         </ul>
         <div class="flex items-center justify-center gap-8">
-          <a href="#" class="max-w-[48px]">
+          <a href="https://www.linkedin.com/in/gabriel-moreira-dev1/" target="_blank" title="linkedin"
+            class="max-w-[48px]">
             <img src="linkedin.svg" alt="linkedin" />
           </a>
-          <a href="#" class="max-w-[48px]">
+          <a href="https://github.com/gabezy" target="_blank" title="Github" class="max-w-[48px]">
             <img src="github.svg" alt="" />
           </a>
         </div>
       </nav>
     </header>
 
-    <main class="max-w-md mx-auto mt-48">
+    <main class="max-w-md mx-auto mt-48" data-animate="scroll left">
       <div class="flex flex-col font-bold">
+        <span class="text-xl text-gray-700">Hi there!</span>
         <span class="text-4xl"> My name is</span>
         <h1 class="text-6xl text-custom-purple-200">Gabriel Moreira</h1>
       </div>
-      <div>
-        <p>I'm a Full Stack developer and a Tech enthusiast</p>
-        <p>Here is some technolgies that i work with and know</p>
-        <ul class="flex flex-wrap items-center justify-center gap-4">
+      <div class="mt-4">
+        <p class="text-xl">I'm a Full Stack developer and a Tech enthusiast</p>
+        <p class="text-xl">Here is some technolgies that i work with and know</p>
+        <ul class="mt-4 flex flex-wrap items-center justify-center gap-4">
           <li title="Java"><img src="java.svg" alt=""></li>
           <li title="Node.js"><img src="nodejs.svg" alt=""></li>
           <li title="TypeScript"><img src="typescript.svg" alt=""></li>
@@ -50,15 +60,15 @@
           <li title="PostgreSQL"><img src="postgresql.svg" alt=""></li>
           <li title="Mongodb"><img src="mongodb.svg" alt=""></li>
         </ul>
-        <span>Located in brasília, Brazil</span>
+        <p class="mt-4 text-base text-gray-600">*Located in brasília, Brazil</p>
       </div>
     </main>
 
 
-    <article class="mt-48">
+    <article class="mt-56" id="projects" data-animate="scroll left">
       <h2 class="my-5 text-4xl font-bold uppercase">Projects</h2>
-      <div class="flex items-center justify-between">
-        <div>
+      <div class="flex flex-wrap items-start justify-between">
+        <div class="basis-column">
           <h2 class="text-xl text-slate-900 font-bold">Dogs | Rede social para cachorros</h1>
             <p class="mt-4 text-lg max-w-sm">
               A social network for dogs, where you can post photos with a the dog's name, age and
@@ -75,7 +85,7 @@
               <li class="bg-custom-purple-500 p-3 rounded-lg">React Router</li>
             </ul>
         </div>
-        <div>
+        <div class="basis-column">
           <h2 class="text-xl text-slate-900 font-bold">Dogs | Rede social para cachorros</h1>
             <p class="mt-4 text-lg max-w-sm">
               A social network for dogs, where you can post photos with a the dog's name, age and
@@ -95,11 +105,47 @@
       </div>
     </article>
 
-    <article class="mt-48">
-      <h2 class="my-5 text-4xl font-bold uppercase">Education</h2>
-    </article>
+    <div class="mt-60 flex flex-wrap items-start justify-between" id="education" data-animate="scroll left">
+      <article class="basis-column">
+        <h2 class="my-5 text-4xl font-bold uppercase">Education</h2>
+        <div class="flex flex-col gap-3">
+          <div class="flex flex-col">
+            <h3 class="text-xl font-bold text-gray-800">Associate Degree</h3>
+            <p class="text-xl font-bold text-gray-800">System Analysis and Development</p>
+            <span class="text-xl">Uniceub</span>
+            <span class="text-sm">Jan/23 - July/25</span>
+          </div>
+          <div class="flex flex-col">
+            <h3 class="text-xl font-bold text-gray-800">Bachelor Degree</h3>
+            <p class="text-xl font-bold text-gray-800">Business Administration</p>
+            <span class="text-xl text-gray-700">Uniceub</span>
+            <span class="text-sm">Jan/21 - Dec/24</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="basis-column">
+        <h2 class="my-5 text-4xl font-bold uppercase">Courses</h2>
+        <div class="flex flex-col gap-3">
+          <div class="flex flex-col items-start">
+            <h3 class="text-xl font-bold text-gray-800">Programming Logic & Web programming</h3>
+            <p>Alura & Oracle</p>
+            <span>50 Hours</span>
+          </div>
+          <div class="flex flex-col items-start">
+            <h3 class="text-xl font-bold text-gray-800">Java & Spring Boot</h3>
+            <p>Alura & Oracle</p>
+            <span>90 Hours</span>
+          </div>
+        </div>
+      </article>
+    </div>
 
   </div>
+  <footer class="bg-purple-600 text-center py-1 mt-48">
+    <p class="text-white font-bold">All rights reserved. Created by Gabriel Moreira ;)</p>
+  </footer>
+  <script type="module" src="./src/js/main.js"></script>
 </body>
 
 </html>
