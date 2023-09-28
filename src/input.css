@@ -104,15 +104,3 @@ img {
     transform: translateX(300px);
   }
 }
-/* #menu a::after { */
-/*   content: ""; */
-/*   display: block; */
-/*   width: 0; */
-/*   height: 2px; */
-/*   background-color: var(--clr-purple-light); */
-/*   transition: all 0.4s ease-in-out; */
-/* } */
-/**/
-/* #menu a:hover::after { */
-/*   width: 100%; */
-/* } */
