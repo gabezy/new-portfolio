@@ -67,6 +67,10 @@ img {
   animation: showRight 0.5s forwards linear;
 }
 
+.js [data-animate="scroll right"].deactivate {
+  animation: fadeRight 0.5s forwards linear;
+}
+
 
 @keyframes showLeft {
   from {
@@ -87,6 +91,17 @@ img {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 1;
+    transform: translateX(o);
+  } 
+  to {
+    opacity: 0;
+    transform: translateX(300px);
   }
 }
 /* #menu a::after { */
