@@ -1,15 +1,15 @@
 export const initAnimateScroll = () => {
-  const sectionsElements = document.querySelectorAll("[data-animate]");
+  const sectionsElements = document.querySelectorAll("[data-animate='scroll left']");
   const mode = "active"
   if (sectionsElements.length) {
-    let main, sections;
-    [main, ...sections] = sectionsElements;
+    let apresetation, sections;
+    [apresetation, ...sections] = sectionsElements;
 
-    main.classList.add(mode);
+
+    apresetation.classList.add(mode);
     const animateScroll = () => {
       sections.forEach(element => {
         const sectionTop = element.getBoundingClientRect().top;
-        console.log(element)
         if (sectionTop < 700) {
           element.classList.add(mode);
         }
@@ -18,7 +18,4 @@ export const initAnimateScroll = () => {
 
     window.addEventListener("scroll", animateScroll);
   }
-
-
-
 }
