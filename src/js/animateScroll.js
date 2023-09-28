@@ -10,7 +10,7 @@ export const initAnimateScroll = () => {
     const animateScroll = () => {
       sections.forEach(element => {
         const sectionTop = element.getBoundingClientRect().top;
-        if (sectionTop < 700) {
+        if (sectionTop < 750) {
           element.classList.add(mode);
         }
       });
