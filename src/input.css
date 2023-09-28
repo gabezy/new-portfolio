@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background: #f5f5f5;
+}
+
 img {
   max-width: 100%;
 }
@@ -59,10 +63,26 @@ img {
   animation: showLeft 0.5s forwards linear;
 }
 
+.js [data-animate="scroll right"].active {
+  animation: showRight 0.5s forwards linear;
+}
+
+
 @keyframes showLeft {
   from {
     opacity: 0;
     transform: translateX(-300px);
+  } 
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes showRight {
+  from {
+    opacity: 0;
+    transform: translateX(300px);
   } 
   to {
     opacity: 1;
