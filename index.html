@@ -22,10 +22,9 @@
         </div>
         <div class="hidden absolute z-10 top-0 right-0 h-[100vh] w-60 bg-zinc-300" data-menu="mobile"
           data-animate="scroll right">
-          <ul class="mt-12 flex flex-col items-center justify-center gap-3">
-            <li class="uppercase"><a href="" class="px-3 py-2 bg-purple-500 p-3 rounded-md">Projects</a></li>
-            <li class="uppercase"><a href="">Education</a></li>
-            <li class="uppercase"><a href="">Curriculum</a></li>
+          <ul class="mt-12 flex flex-col items-center justify-center gap-4">
+            <li class="uppercase"><a href="#projects" class="px-3 py-2 bg-purple-500 p-3 rounded-md">Projects</a></li>
+            <li class="uppercase"><a href="#education" class="">Education</a></li>
             <li class="flex items-center justify-center gap-2">
               <a href="https://www.linkedin.com/in/gabriel-moreira-dev1/" target="_blank" title="linkedin"
                 class="max-w-[48px]">
@@ -64,15 +63,16 @@
       </nav>
     </header>
 
-    <article class="max-w-md mx-auto mt-48" id="projects" data-animate="scroll left">
+    <article class="max-w-md mx-auto mt-48" data-animate="scroll left">
       <div class="flex flex-col font-bold">
         <span class="text-xl text-gray-700">Hi there!</span>
         <span class="text-4xl"> My name is</span>
         <h1 class="text-6xl text-custom-purple-200">Gabriel Moreira</h1>
       </div>
       <div class="mt-4">
-        <p class="text-xl">I'm a Full Stack developer and a Tech enthusiast</p>
-        <p class="text-xl">Here is some technologies that i work and play with </p>
+        <p class="text-xl">I'm a <strong class="text-purple-600">Full Stack</strong> developer and a Tech enthusiast</p>
+        <p class="text-xl">Here are some <strong class="text-purple-600">technologies</strong> that I work and play with
+        </p>
         <ul class="mt-4 flex flex-wrap items-center justify-center gap-4">
           <li title="Java"><img src="java.svg" alt=""></li>
           <li title="Node.js"><img src="nodejs.svg" alt=""></li>
@@ -88,9 +88,9 @@
       </div>
     </article>
 
-    <main class="mt-56 max-w-5xl relative mx-auto" data-animate="scroll left">
+    <main class="mt-56 max-w-5xl relative mx-auto" data-animate="scroll left" id="projects">
       <h2
-        class="flex gap-2 items-center my-5 text-4xl font-bold uppercase before:block before:w-3 before:h-9 before:bg-purple-700 before:rounded-lg ">
+        class="flex gap-2 items-center mt-5 mb-7 text-4xl font-bold uppercase before:block before:w-3 before:h-9 before:bg-purple-700 before:rounded-lg ">
         Courses
       </h2>
       <div class="fade max-h-[470px]" data-slide>
@@ -102,7 +102,7 @@
             class="bg-purple-700 py-3 px-5 rounded-md text-white text-center uppercase hover:bg-purple-500 transition">
             Dogs | Rede social para cachorros
           </a>
-          <span class="text-lg text-stone-950">Technologies used</span>
+          <span class="text-lg text-zinc-400">Technologies used</span>
           <ul class="flex items-center justify-center gap-3">
             <li title="JavaScript" class="w-16"><img src="javascript.svg" alt=""></li>
             <li title="Reactjs" class="bg-white rounded-full"><img src="react.svg" alt="Reactjs Icon"></li>
