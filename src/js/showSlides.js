@@ -46,8 +46,12 @@ export const initShowSlide = () => {
   }
 
   showSlides(slideIndex)
-  previousButton.addEventListener("click", previousSlide);
-  nextButton.addEventListener("click", nextSlide);
+  //TODO: add listener for touch event
+  const events = ["click"]
+  events.forEach(event => {
+    previousButton.addEventListener(event, previousSlide);
+    nextButton.addEventListener(event, nextSlide);
+  });
 
   dots.forEach((dot, index) => {
     dot.addEventListener("click", () => {
